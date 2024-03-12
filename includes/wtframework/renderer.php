@@ -8,7 +8,7 @@
 */
 
 class Renderer { 
-    
+
     /**
     * Make a template with data inside of it and returns HTML DOM Tree in string
     * @param string $path Relative path from templates folder 
@@ -19,7 +19,7 @@ class Renderer {
     {
         // Avoiding XSS attack
         foreach ($data as $key => $value) {
-            if (is_array($value)) {
+            if (is_array($data[$key])) {
                 $data[$key] = htmlspecialchars($data[$key]);
             }
         }
@@ -44,7 +44,7 @@ class Renderer {
     {
         // Avoiding XSS attack
         foreach ($data as $key => $value) {
-            if (is_array($value)) {
+            if (is_array($data[$key])) {
                 $data[$key] = htmlspecialchars($data[$key]);
             }
         }
