@@ -16,6 +16,8 @@ Simple web application framework for native **PHP** beginners, which can be inst
 Or clone all includes folder in root directory of your project 
 
 **Final Step:**
+Insert into your includes script this **include line of code**\
+It will include all modules of framwork
 ```php
-
+include 'includes/wtfframework/includes.php';
 ```
