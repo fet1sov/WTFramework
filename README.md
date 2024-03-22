@@ -10,14 +10,9 @@ Simple web application framework for native **PHP** beginners, which can be inst
 
 ## Installation
 
-**1 Step:**
-> wget https://raw.githubusercontent.com/fet1sov/WTFramework/main/install.php
+If you work **on the clean project so just clone all files** into your project.
 
-Or clone all includes folder in root directory of your project 
-
-**Final Step:**
-Insert into your includes script this **include line of code**\
-It will include all modules of framwork
+In the exist project add this line into your includes
 ```php
 include 'includes/wtfframework/includes.php';
 ```

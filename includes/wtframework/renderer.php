@@ -17,13 +17,6 @@ class Renderer {
     */
     public static function getRawTemplate($path, array $data = []) : ?string
     {
-        // Avoiding XSS attack
-        foreach ($data as $key => $value) {
-            if (is_array($data[$key])) {
-                $data[$key] = htmlspecialchars($data[$key]);
-            }
-        }
-
         extract($data);
         ob_start();
         try {
@@ -42,13 +35,6 @@ class Renderer {
     */
     public static function includeTemplate($path, array $data = []) : void
     {
-        // Avoiding XSS attack
-        foreach ($data as $key => $value) {
-            if (is_array($data[$key])) {
-                $data[$key] = htmlspecialchars($data[$key]);
-            }
-        }
-
         extract($data);
         ob_start();
         try {
