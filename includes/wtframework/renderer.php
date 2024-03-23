@@ -20,7 +20,7 @@ class Renderer {
         extract($data);
         ob_start();
         try {
-            require __DIR__ . "/templates/" . $path;
+            require $_SERVER['DOCUMENT_ROOT'] . "/templates/" . $path;
         } catch(Throwable $trow) {
             return null;
         } finally {
@@ -38,7 +38,7 @@ class Renderer {
         extract($data);
         ob_start();
         try {
-            require __DIR__ . "/templates/" . $path;
+            require $_SERVER['DOCUMENT_ROOT'] . "/templates/" . $path;
         } catch(Throwable $trow) {
             
         } finally {
