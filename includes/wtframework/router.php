@@ -37,7 +37,7 @@ class Router
         preg_match_all("/(?<={).+?(?=})/", $route, $paramMatches);
 
         if(empty($paramMatches[0])){
-            $this->addRoute($file,$route);
+            $this->addRoute($file, $route);
             return;
         }
 

@@ -1,0 +1,21 @@
+name: PHP Syntax Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  syntax-check:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Check PHP syntax errors
+      uses: overtrue/phplint@9.1.2
