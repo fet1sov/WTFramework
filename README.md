@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/fet1sov/WTFramework/main/logo.png" width="400" alt="WTFramework"></p>
+![image](https://github.com/user-attachments/assets/c7b1504c-61be-4bcd-a132-a7c64de2b0c2)
 
 ## WTFramework
 Simple web application framework for native **PHP** beginners, which can be installed without using [**Composer**](https://github.com/composer/composer). Created in purpose to make sites more independent.\
